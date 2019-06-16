@@ -1,0 +1,164 @@
+<!doctype html>
+<html>
+<head>
+    <title>Bancos de Benfica</title>
+    <link href="styles/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Carme&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="scripts/mainButtons.js"></script>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1 class="headTitle textHeader">BANCOS DE BENFICA</h1>
+        <h1 class="headContact textHeader" >CONTACTE-NOS</h1>
+    </div>
+
+    <div class="navbar">
+        <div class="info">
+            <img class="logoESELX inline-block-30px" src="images/logotipos/Logo_ESELx_Preto.png" alt="LogoESELX">
+            <img class="logoFABLAB inline-block-30px" src="images/logotipos/50807598_618964488557995_1483667139251404800_n.png" alt="LogoFABLAB">
+            <img class="logoDDMP inline-block-30px" src="images/logotipos/DDMP+logo+uden+EU-01.png" alt="LogoDDMP">
+        </div>
+
+        <div class="buttons">
+            <img class="homeButton inline-block-30px" src="images/logotipos/home_icon-icons.com_73532.png" alt="home" onclick="clickHome()">
+            <img class="profileButton inline-block-30px" src="images/logotipos/img_227643.png" alt="profile">
+            <img class="helpButton inline-block-30px" src="images/logotipos/Icon-round-Question_mark.png" alt="help">
+        </div>
+    </div>
+
+    <div class="mainButtons">
+        <img class="iniciativa" src="images/botoes/INICIATIVA.png" alt="iniciativa" onclick="clickIniciativa()">
+        <img class="projetos" src="images/botoes/PROJETOS.png" alt="projetos" onclick="clickProjetos()">
+        <img class="participe" src="images/botoes/PARTICIPE.png" alt="participe" onclick="clickParticipe()">
+    </div>
+
+    <div class="overlayIniciativa darkenOverlay">
+        <div class="textboxIniciativa textBody">
+            <h1 style="font-size: 36px;">INICIATIVA</h1>
+            <h2>
+                Os presentes 6 bancos foram projetos selecionados de entre os 10 projetos mais votados na exposição "Banco de Benfica",
+                realizados pelos alunos do 3ºano da licenciatura de Artes Visuais e Tecnologias.
+                O projeto em si, decorreu no âmbito da MakeSMTHNG,
+                um movimento que se expressa pelo espírito DIY em prole da criatividade e diversão pelo ato de criar algo em vez de comprar.
+            </h2>
+        </div>
+    </div>
+
+    <div class="overlayProjetos darkenOverlay">
+        <img class="arrow Left" src="images/logotipos/seta_1.png" onclick="getImageProjetos(false);" />
+        <img class="imgProjetos" src="images/bancos/BANCO_1.png" onclick="showInfo()" />
+        <img class="imgProjetos" src="images/bancos/BANCO_2.png" onclick="showInfo()" />
+        <img class="imgProjetos" src="images/bancos/BANCO_3.png" onclick="showInfo()" />
+        <img class="imgProjetos" src="images/bancos/BANCO_4.png" onclick="showInfo()" />
+        <img class="imgProjetos" src="images/bancos/BANCO_5.png" onclick="showInfo()" />
+        <img class="imgProjetos" src="images/bancos/BANCO_6.png" onclick="showInfo()" />
+        <img class="arrow Right" src="images/logotipos/seta.png" onclick="getImageProjetos(true);" />
+    </div>
+
+    <div class="overlayInfo">
+        <div class="infoProjetos darkenOverlay">
+            <h1 class="textInfoProjetos textBody" style="text-align: left;">Nome: Sandro Arnauth<br />Profissão: Peixari</h1>
+            <img class="imgInfoProjetos" src="images/bancos/BANCO_1.png" />
+            <h2 class="textInfoProjetos textBody">
+                Processo: Corte por CNC ( Stepcraft Black Edition 840, fresa de 3mm)
+                Material: MDF 15mm Função: Banco com apoio pedonal para engraxamento, com compartimento para utensílios e pega para melhor transporte
+                Nº de peças: 10, resultando em dois elementos
+                Meio de união: encaixe
+            </h2>
+            <h1 class="download textBody" style="font-size: 32px;" onclick="Download()">Download</h1>
+            <img class="arrowBack" src="images/logotipos/seta_1.png" onclick="infoBack()" />
+        </div>
+        <div class="infoProjetos darkenOverlay">
+            <h1 class="textInfoProjetos textBody" style="text-align: left;">Nome: João Martins<br />Profissão: Engraxador</h1>
+            <img class="imgInfoProjetos" src="images/bancos/BANCO_2.png" />
+            <h2 class="textInfoProjetos textBody">
+                Processo: Corte por CNC ( Stepcraft Black Edition 840, fresa de 3mm)
+                Material: MDF 15mm Função: Banco com apoio pedonal para engraxamento, com compartimento para utensílios e pega para melhor transporte
+                Nº de peças: 10, resultando em dois elementos
+                Meio de união: encaixe
+            </h2>
+            <h1 class="download textBody" style="font-size: 32px;" onclick="Download()">Download</h1>
+            <img class="arrowBack" src="images/logotipos/seta_1.png" onclick="infoBack()" />
+        </div>
+        <div class="infoProjetos darkenOverlay">
+            <h1 class="textInfoProjetos textBody" style="text-align: left;">Nome: João Fernandes<br />Profissão: Reparador de televisões</h1>
+            <img class="imgInfoProjetos" src="images/bancos/BANCO_3.png" />
+            <h2 class="textInfoProjetos textBody">
+                Processo: Corte por CNC ( Stepcraft Black Edition 840, fresa de 3mm)
+                Material: MDF 15mm Função: Banco com apoio pedonal para engraxamento, com compartimento para utensílios e pega para melhor transporte
+                Nº de peças: 10, resultando em dois elementos
+                Meio de união: encaixe
+            </h2>
+            <h1 class="download textBody" style="font-size: 32px;" onclick="Download()">Download</h1>
+            <img class="arrowBack" src="images/logotipos/seta_1.png" onclick="infoBack()" />
+        </div>
+        <div class="infoProjetos darkenOverlay">
+            <h1 class="textInfoProjetos textBody" style="text-align: left;">Nome: Lara Gomes<br />Profissão: Jardim Infantil</h1>
+            <img class="imgInfoProjetos" src="images/bancos/BANCO_4.png" />
+            <h2 class="textInfoProjetos textBody">
+                Processo: Corte por CNC ( Stepcraft Black Edition 840, fresa de 3mm)
+                Material: MDF 15mm Função: Banco com apoio pedonal para engraxamento, com compartimento para utensílios e pega para melhor transporte
+                Nº de peças: 10, resultando em dois elementos
+                Meio de união: encaixe
+            </h2>
+            <h1 class="download textBody" style="font-size: 32px;" onclick="Download()">Download</h1>
+            <img class="arrowBack" src="images/logotipos/seta_1.png" onclick="infoBack()" />
+        </div>
+        <div class="infoProjetos darkenOverlay">
+            <h1 class="textInfoProjetos textBody" style="text-align: left;">Nome: Rodrigo Ferreira<br />Profissão: Fadista</h1>
+            <img class="imgInfoProjetos" src="images/bancos/BANCO_5.png" />
+            <h2 class="textInfoProjetos textBody">
+                Processo: Corte por CNC ( Stepcraft Black Edition 840, fresa de 3mm)
+                Material: MDF 15mm Função: Banco com apoio pedonal para engraxamento, com compartimento para utensílios e pega para melhor transporte
+                Nº de peças: 10, resultando em dois elementos
+                Meio de união: encaixe
+            </h2>
+            <h1 class="download textBody" style="font-size: 32px;" onclick="Download()">Download</h1>
+            <img class="arrowBack" src="images/logotipos/seta_1.png" onclick="infoBack()" />
+        </div>
+        <div class="infoProjetos darkenOverlay">
+            <h1 class="textInfoProjetos textBody" style="text-align: left;">Nome: João Pires<br />Profissão: Engraxador</h1>
+            <img class="imgInfoProjetos" src="images/bancos/BANCO_6.png" />
+            <h2 class="textInfoProjetos textBody">
+                Processo: Corte por CNC ( Stepcraft Black Edition 840, fresa de 3mm)
+                Material: MDF 15mm Função: Banco com apoio pedonal para engraxamento, com compartimento para utensílios e pega para melhor transporte
+                Nº de peças: 10, resultando em dois elementos
+                Meio de união: encaixe
+            </h2>
+            <h1 class="download textBody" style="font-size: 32px;" onclick="Download()">Download</h1>
+            <img class="arrowBack" src="images/logotipos/seta_1.png" onclick="infoBack()" />
+        </div>
+
+    </div>
+
+    <div class="downloadConfirm textBody darkenOverlay">
+        <h1>O seu download foi realizado com sucesso!</h1>
+    </div>
+
+    <div class="overlayParticipe darkenOverlay">
+        <form class="formProjeto">
+            <div class="column">
+                <input class="textForm" type="text" name="name" placeholder="Nome:" size="50" />
+                <input class="textForm" type="text" name="projectName" placeholder="Nome do Projeto:" size="50" />
+                <textarea class="textForm" name="conceito" placeholder="Conceito:" rows="10" cols="50"></textarea>
+            </div>
+            <div class="column">
+                <input class="textForm" type="text" name="processo" placeholder="Processo:" size="50" />
+                <input class="textForm" type="text" name="material" placeholder="Material:" size="50" />
+                <input class="textForm" type="text" name="espessura" placeholder="Espessura:" size="50" />
+                <input class="textForm" type="text" name="dimensaoFinal" placeholder="Dimensão Final:" size="50" />
+                <input class="textForm" type="text" name="funçao" placeholder="Função:" size="50" />
+                <input class="textForm" type="text" name="nPeças" placeholder="Nº de Peças:" size="50" />
+                <input class="textForm" type="submit" name="submit" value="SUBMETER" size="50" style="width: 45%; text-align: center;" />
+            </div>
+        </form>
+    </div>
+
+
+</body>
+
+</html>

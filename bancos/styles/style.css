@@ -1,0 +1,335 @@
+* {
+    box-sizing: border-box;
+}
+
+.textHeader {
+    font-family: Carme;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 43px;
+    color: #FFFFFF;
+}
+
+.textBody {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.inline-block-30px {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+
+.header {
+    margin: -8px;
+    height: 80px;
+    display: flex;
+    padding-left: 20px;
+    background: #000000;
+}
+
+.navbar {
+    display: flex;
+}
+
+.info {
+    display: flex;
+    flex-basis: 80%;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.buttons {
+    display: flex;
+    flex-basis: 20%;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.mainButtons{
+    display: inline-block;
+    text-align: center;
+    padding-top: 150px;
+    margin-left: 55px;
+}
+
+.headTitle {
+    display: inline;
+    flex-basis: 80%;
+    padding: 20px;
+}
+
+.headContact {
+    display: inline;
+    flex-basis: 20%;
+    padding: 30px;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.logoESELX {
+    width: 148px;
+    height: 98.67px;
+}
+
+.logoFABLAB {
+    width: 87.12px;
+    height: 50px;
+}
+
+.logoDDMP {
+    width: 82px;
+    height: 54.12px;
+}
+
+.homeButton {
+    width: 67px;
+    height: 67px;
+    z-index: 3;
+}
+
+.profileButton {
+    width: 47px;
+    height: 54.19px;
+    z-index: 3;
+}
+
+.white {
+    filter: invert(100%) sepia(1%) saturate(3626%) hue-rotate(267deg) brightness(118%) contrast(100%);
+}
+
+.helpButton {
+    width: 53px;
+    height: 53px;
+    z-index: 3;
+}
+
+.animationCor {
+    width: 380px;
+    height: 380px;
+    opacity: 0.2;
+    transition: all 4s;
+}
+
+.animationCor:hover {
+    transform:rotate(180deg);
+}
+
+.iniciativa {
+    width: 380px;
+    height: 380px;
+    margin-right: 100px;
+    left: 38px;
+    top: 300px;
+    transition: transform 1s;
+}
+
+.iniciativa:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.projetos {
+    width: 380px;
+    height: 380px;
+    margin-right: 100px;
+    left: 537px;
+    top: 300px;
+    transition: transform 1s;
+}
+
+.projetos:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.participe {
+    width: 380px;
+    height: 380px;
+    margin-right: 100px;
+    left: 1036px;
+    top: 300px;
+    transition: transform 1s;
+}
+
+.participe:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.darkenOverlay {
+    position: fixed;
+    display: block;
+    height: calc(100% - 80px);
+    width: 100%;
+    top: 80px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    background-color: rgba(0,0,0,0.7);
+    transition: opacity 2s;
+    animation: 0.5s opacitySet;
+}
+
+@keyframes opacitySet{
+    from{
+        opacity: 0.0;
+    }
+    to {
+        opacity: 1.0;
+    }
+}
+
+.overlayIniciativa {
+    display: none;
+
+}
+
+.textboxIniciativa {
+    display: block;
+    margin: auto;
+    margin-top: 150px;
+    padding: 50px;
+    width: 50%;
+    background: #F4F4F4;
+    z-index: 3;
+    opacity: 1.0;
+}
+
+.overlayProjetos {
+    display: none;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.overlayInfo {
+    display: none;
+    text-align: center;
+}
+
+.imgProjetos {
+    display: none;
+    width: 970px;
+    height: 510px;
+    margin-left: 50px;
+}
+
+
+.arrow {
+    display: inline-block;
+    width: 53px;
+    height: 53px;
+    margin-bottom: 250px;
+    margin-left: 50px;
+}
+
+.infoProjetos {
+    display: none;
+    margin: auto;
+    margin-top: 100px;
+    margin-left: 400px;
+    padding: 50px;
+    width: 50%;
+    height: 52%;
+    background: #F4F4F4;
+    z-index: 3;
+    opacity: 1.0;
+}
+
+.textInfoProjetos{
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+.imgInfoProjetos {
+    float: right;
+    width: 45%;
+    height: 55%;
+    border-radius: 15px;
+}
+
+.download {
+    float: right;
+    text-align: center;
+    margin-right: 100px;
+    background-color: #C4C4C4;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.arrowBack {
+    width: 53px;
+    height: 53px;
+    margin-right: 150px;
+    margin-top: 100px;
+}
+
+.downloadConfirm {
+    display: none;
+    margin: auto;
+    margin-top: 300px;
+    width: 20%;
+    height: 10%;
+    text-align: center;
+    word-wrap: break-word;
+    z-index: 3;
+    border-radius: 15px;
+    background-color: #C4C4C4;
+}
+
+.overlayParticipe {
+    display: none;
+    z-index: 2;
+}
+
+.overlayPerfil {
+    display: none;
+    z-index: 2;
+}
+
+.formProjeto {
+    margin: auto;
+    background-color: #F4F4F4;
+    width: 40%;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.column {
+    margin: auto;
+    background-color: #F4F4F4;
+    float: left;
+    width: 50%;
+    height: 65%;
+}
+
+
+
+.textForm {
+    width: 90%;
+    background-color: #C4C4C4;
+    border-radius: 10px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: start;
+    padding-left: 5px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    resize: none;
+    color: rgba(0, 0, 0, 1.0);
+}
+
+.userImage{
+    padding-top: 20px;
+    width: 80%;
+    height: 90%;
+}
